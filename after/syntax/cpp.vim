@@ -2290,4 +2290,6 @@ if version >= 508 || !exists("did_cpp_syntax_inits")
   HiLink cppRawString       String
   HiLink cppRawDelimiter    Delimiter
   delcommand HiLink
+  highlight Operator ctermfg=Red
+  highlight Special ctermfg=Red
 endif
