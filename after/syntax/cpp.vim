@@ -2292,6 +2292,6 @@ if version >= 508 || !exists("did_cpp_syntax_inits")
   delcommand HiLink
   syntax match mySpecialSymbols "@\|#\|$\|^\|+\|-\|\*\|;\|?\|:\|,\|<\|>\|&\||\|!\|\~\|%\|=\|)\|(\|{\|}\|\.\|\[\|\]"
 "  highlight Operator ctermfg=Yellow
-"  highlight def link mySpecialSymbols Operator
+  highlight def link mySpecialSymbols Operator
 "  highlight Operator ctermfg=Yellow
 endif
