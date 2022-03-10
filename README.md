@@ -1,6 +1,21 @@
 vim.cpp - additional vim c++ syntax highlighting
 ------------------------------------------------
 
+Modified to highlight variables (get diffrent color with operators like -, =, &, ...)
+
+1. Add Plugin
+Plugin 'wondol2/vim-cpp-enhanced-highlight'
+:PluginInstall
+
+2. Add below command at the bottom of .vimrc file.
+In my case, I'm using code-dark color theme, I think 141, 251 is proper color.
+Of course you can change that color integer depending on your taste.
+
+let g:cpp_no_function_highlight = 1
+highlight Normal ctermfg=141 " for variables
+highlight cppSpecialCharacters ctermfg=251 " for operators(special charaters)
+
+------------------------------------------------
 This file contains additional syntax highlighting that I use for C++11/14/17
 development in Vim. Compared to the standard syntax highlighting for C++ it
 adds highlighting of (user defined) functions and the containers and types in
