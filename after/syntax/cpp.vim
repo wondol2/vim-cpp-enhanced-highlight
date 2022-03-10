@@ -2290,7 +2290,7 @@ if version >= 508 || !exists("did_cpp_syntax_inits")
   HiLink cppRawString       String
   HiLink cppRawDelimiter    Delimiter
   delcommand HiLink
-  syntax match mySpecialSymbols "//\|\^\|+\|-\|\*\|;\|?\|:\|,\|<\|>\|&\||\|!\|\~\|%\|=\|)\|(\|{\|}\|\.\|\[\|\]"
+  syntax match mySpecialSymbols "/\|\^\|+\|-\|\*\|;\|?\|:\|,\|<\|>\|&\||\|!\|\~\|%\|=\|)\|(\|{\|}\|\.\|\[\|\]"
   highlight def link mySpecialSymbols Operator
 "  highlight Operator ctermfg=Yellow
 endif
